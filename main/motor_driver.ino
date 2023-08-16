@@ -60,8 +60,8 @@ void md_motor_control(Motor* motor){
   else if(motor->speed < 0.0f){
     // モーターの回転数と電圧の変換（仮で線形とする）
     uint32_t diff = (-motor->speed / MAX_SPEED) * PWM_MAX * motor->gain;
-    ledcWrite(motor->pwm_plus_channel, PWM_MAX);
-    ledcWrite(motor->pwm_minus_channel, PWM_MAX-diff);
+    ledcWrite(motor->pwm_plus_channel, PWM_MAX-diff);
+    ledcWrite(motor->pwm_minus_channel, PWM_MAX);
   }
   else{
     ledcWrite(motor->pwm_plus_channel, PWM_MAX);
