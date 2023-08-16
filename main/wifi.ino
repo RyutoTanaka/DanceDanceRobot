@@ -1,3 +1,4 @@
+// wifi経由でDDRの指令を受け取る関数
 #include <WiFi.h>;
 
 static WiFiServer server(80);

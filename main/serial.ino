@@ -1,3 +1,6 @@
+// デバッグ用のserialを管理するファイル
+
+// false:出力しない　true:出力する
 static bool serial_valid = false;
 
 void serial_setup(bool valid) {

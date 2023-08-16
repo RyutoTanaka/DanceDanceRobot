@@ -1,3 +1,5 @@
+// 使用する構造体をまとめたヘッダファイル
+
 #ifndef DEFINE_H
 #define DEFINE_H
 
