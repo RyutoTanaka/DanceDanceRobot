@@ -26,6 +26,7 @@ struct motor_data{
   float gain;
   int pwm_plus_pin;
   int pwm_minus_pin;
+  int pwm_plus_channel;
 };
 typedef struct motor_data Motor;
 
