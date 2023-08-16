@@ -1,4 +1,4 @@
-#include "define.h"
+#include "define.hpp"
 
 void setup() {
   serial_setup(true);
