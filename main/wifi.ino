@@ -1,6 +1,6 @@
 #include <WiFi.h>;
 
-WiFiServer server(80);
+static WiFiServer server(80);
 
 void wifi_setup(){
   WiFi.begin("ESSID", "PASSWD");          //アクセスポイント接続のためのIDとパスワードの設定

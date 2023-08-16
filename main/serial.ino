@@ -1,4 +1,4 @@
-bool serial_valid = false;
+static bool serial_valid = false;
 
 void serial_setup(bool valid) {
   if(valid){
