@@ -25,12 +25,14 @@ struct motor_data{
   float speed; // [rpm]
   float gain;
   int pwm_plus_pin;
+  uint8_t pwm_plus_channel;
   int pwm_minus_pin;
-  int pwm_plus_channel;
+  uint8_t pwm_minus_channel;
 };
 typedef struct motor_data Motor;
 
 struct motor_driver_data{
+  bool enable;
   Motor MA;
   Motor MB;
   int standby_pin;
