@@ -12,6 +12,6 @@ void udp_tx::init(void){
 
 void udp_tx::write(const ConnectionData& data){
     udp.beginPacket(MDNS.queryHost("UDP_Client00"), Remote_Port);
-    udp.write(&data,sizeof(ConnectionData));
+    udp.write(data.serialize(),sizeof(data.data));
     udp.endPacket();
 }

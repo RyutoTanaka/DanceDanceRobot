@@ -3,6 +3,9 @@
 #include "../lib/DDR_board_lib/board_data/board_pins.hpp"
 #include "../lib/DDR_board_lib/motor/motor.hpp"
 #include "../lib/DDR_board_lib/gyro/gyro.hpp"
+#include "../lib/DDR_connection_lib/udp/udp_tx.hpp"
+#include "../lib/DDR_connection_lib/udp/udp_rx.hpp"
+
 
 // put function declarations here:
 int myFunction(int, int);

@@ -21,5 +21,5 @@ public:
     void init(void);
     void update(void);
     bool is_updated(void);
-    ConnectionData& read(void);
+    ConnectionData read(void);
 };
