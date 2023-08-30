@@ -7,6 +7,12 @@ public:
         float vy;
     } Data;
     Data data;
+    ConnectionData(void){}
+
+    ConnectionData(float _vx,float _vy){
+        data.vx = _vx;
+        data.vy = _vy;
+    }
     uint8_t* serialize(void) const {
         uint32_t temp32[2];
         uint8_t ret[8] = {};

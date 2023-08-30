@@ -1,6 +1,6 @@
 #include "udp_tx.hpp"
 
-void udp_tx::init(void){
+void UdpTx::init(void){
     WiFi.mode(WIFI_STA);
     WiFi.begin(ssid, password);
     while (WiFi.status() != WL_CONNECTED) {
@@ -10,7 +10,7 @@ void udp_tx::init(void){
     udp.begin(Org_Port);
 }
 
-void udp_tx::write(const ConnectionData& data){
+void UdpTx::write(const ConnectionData& data){
     udp.beginPacket(MDNS.queryHost("UDP_Client00"), Remote_Port);
     udp.write(data.serialize(),sizeof(data.data));
     udp.endPacket();
